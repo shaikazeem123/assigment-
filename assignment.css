@@ -1,0 +1,355 @@
+.protest-riot-regular {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'icomoon', sans-serif; /* Use 'icomoon' font family */
+}
+body{
+    background-color: rgb(215, 215, 215);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Ensure the logo and links are spaced out */
+    align-items: center; /* Align items vertically */
+   background-color: white;
+    padding: 10px; /* Add padding for spacing */
+}
+
+.nav-cont ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+   margin-right: 120px;
+}
+
+.nav-cont ul li a {
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    padding: 5px 10px; 
+    text-decoration: none;
+   position: relative;
+}
+
+.nav-cont ul li a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(0, 255, 0);
+   height: 3px;
+   transition: ease-in-out 0.25s;
+}
+.nav-cont ul li a:hover::after{
+    width: 100%;
+}
+.logo a{
+    margin-left: 150px ; /* Pushes the logo to the left */
+    color: rgb(0, 249, 0);
+    padding: 5px 10px; /* Add padding for space around the logo */
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.backimg-cont{
+
+    background-image: url('./images/img_3.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 930px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.banner-cont{
+    max-width: 650px;
+    text-align: center; 
+   
+}
+h1{
+    color: aliceblue;
+    font-size: 68px;
+    font-family: "Protest Riot", sans-serif;
+}
+.banner-cont p{
+    color: rgb(201, 201, 201);
+    font-size:20px;
+    font-weight: 500;
+}
+.banner-cont span{
+text-decoration: underline;
+}
+.banner-button{
+    margin: 20px;
+    color: beige;
+    border-radius: 20px;
+  width: fit-content;
+  background: none;
+    border: 2px solid white;
+    height: 38px;
+    width: 160px;
+    font-weight: 600;
+    font-size: larger;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align cards to the start */
+    margin-left: 150px; /* Compensate for the margin left by shifting the container */
+}
+
+.cards {
+    width: 23%; /* Set the width of each card to one-third minus margin */
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin: 20px 50px; /* Add margin between cards */
+}
+
+.cards img {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.cards h4,
+.cards p {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.cards p {
+    color: rgb(136, 136, 136);
+    font-weight: 500;
+}
+
+.cards button {
+    border-radius: 18px;
+    background-color: rgb(147, 222, 33);
+    color: aliceblue;
+    border: none;
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    margin: 10px;
+}
+
+.card-cont {
+    margin: 0 10px; /* Adjust the margin for better spacing */
+}
+.back-img-cont{
+    background-image: url('./images/img_3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    text-align: center;
+}
+.back-img-cont h2{
+  font-weight: 500;
+  font-size: 40px;
+  font-family: "Protest Riot", sans-serif;
+}
+.back-img-cont p{
+    color: rgb(201, 201, 201);
+    font-size:20px ;
+    font-weight: 500;
+   
+  }
+.static-card-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align cards to the start */
+    margin-left: 150px;
+}
+.static-cards{
+   width: 23%;
+   background-color:rgb(255, 255, 255);
+   border-radius: 4px;
+   margin: 20px 50px; 
+   
+}
+.card-img img{
+  margin: 20px;
+  padding: 10px;
+
+}
+.static-cont h4,
+.static-cont p{
+    margin: 20px;
+   
+    font-size: 14px;
+}
+.static-cont p{
+    color: rgb(136, 136, 136);
+    font-weight: 500;
+}
+
+
+/* code for footer */
+.footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    
+}
+.backimg{
+    background: rgba(0,0,0,0.7)url(images/img_4.jpg) ;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.row{
+    display: flex;
+    padding: 100px;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col-1{
+    flex-basis: 25%;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    font-family: poppins;
+    margin-bottom: 100px;
+}
+.col-1 h4{
+    padding: 8px;
+    font-size: 20PX;
+}
+.col-1 p{
+    padding: 10px;
+    font-size: 17PX;
+    gap: 10px;
+
+}
+.col-1 p a{
+    text-decoration: none;
+    color:  rgb(49, 173, 49);;
+}
+.col-2{
+    flex-basis: 25%;
+    margin-top: 40px;
+    /* padding-left: 30PX;  */
+}
+.col-2 ul{
+    list-style-type: none;
+}
+.col-2 h4{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: -20px;
+}
+.stack-link a{
+    color: rgb(49, 173, 49);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+
+}
+.col-3{
+    flex-basis: 25%;
+    margin-top: 40px;
+    padding-left: 10PX; 
+}
+.col-3 ul{
+    list-style-type: none;
+}
+.col-3 h4 {
+    font-size: 20px;
+    color: white;
+    padding: 12px;
+    margin-top: -20px;
+}
+.col-3 .stack-link{
+    padding: 5PX;
+}
+.col-4{
+    flex-basis: 25%;
+    margin-top: 40px;
+ 
+}
+.col-4 h4{
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    margin-top: -20px;
+    margin-left: -10PX;
+}
+.col-4 p{
+    font-size: 18px;
+    color: white;
+    padding-bottom: 15px;
+    position: relative;
+}
+.col-4 input{
+    font-size: 28px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.col-4 button img{
+  width: 100%;
+  height: 100%;
+}
+.col-4 button{
+  background-color:#95cd42;
+  width: 35px;
+  height: 100%;
+}
+.col-5 p{
+    color: white;
+    margin-left: 30px;
+}
+.form-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background-color: black;
+    border: none;
+    border-radius:5px;
+    border: 1px solid white;
+}
+::placeholder{
+    font-size: 18px;
+}
+.col-6 ul{
+    display: flex;
+    padding: 20px;
+    list-style-type: none;
+    margin: 10px;
+}
+.col-6 li a img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+
+}
